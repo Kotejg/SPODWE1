@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <header class="header">
+        <h2>Formulario de Contato</h2>
+    </header> 
+    <main>
+        <label for="nome">Nome e Sobrenome</label>
+        <input type="text" class="input" id="nome"  placeholder=" Nome">
+        <label for="email">Email</label>
+        <input type="email" class="input" id="email" placeholder=" Email">
+        <label for="tel">Telefone</label>
+        <input type="tel" class="input" id="tel" placeholder=" Telefone">
+        <label for="mensagem">Mensagem</label>
+        <input type="text" class="input" id="mensagem" placeholder=" Mensagem">
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Como prefere nosso contato?</legend>
+            <input type="radio" name="Email" id="Email"> 
+            <label for="Email">Email</label> <br>
+            <input type="radio" name="Telefone" id="Telefone">
+            <label for="Telefone">Telefone</label> <br>
+            <input type="radio" name="whatsapp" id="whatsapp">
+            <label for="whatsapp">whatsapp</label> <br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Qual horário prefere?</legend>
+            <select class="horario" id="">
+                <option value="Manha">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select>
+            <br>
+        </fieldset>
+        <br>
+        <div class="">
+            <input type="checkbox" name="opcao" id="opcao">
+            <label for="opcao">Gostaria de receber nossas novidades por email?</label>
+        </div>
+
+        <br>
+        <br>
+        <div class="envia-f txt-white" >
+            <h2>Enviar Formulario </h2>
+        </div> 
+
+          <table>
+
+            <thead>
+              <tr>
+                <th scope="col" class="txt-white">Dia</th>
+                <th scope="col" class="txt-white">Horário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Segunda</th>
+                <td>08:00 - 17:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Terça</th>
+                <td>08:00 - 17:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Quarta</th>
+                <td>08:00 - 17:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Quinta</th>
+                <td>08:00 - 17:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Sexta</th>
+                <td>08:00 - 17:00</td>
+              </tr>   
+            </tbody>
+          </table>
+
+    
+    </main>
+    
+    <footer>
+        <h2>Desenvolvido por Jefferson</h2>
+    </footer>
+</body>
+</html>
