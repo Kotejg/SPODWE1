@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Modo Escuro/Claro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <input type="checkbox" id="darkModeToggle">
+    <label for="darkModeToggle">Modo Escuro</label>
+
     <h3>Atividade 6</h3>
     <section>
-        <input type="checkbox" name="">
         <h2>
             PURE CSS dARK / LIGHT MODE
         </h2>
@@ -47,6 +45,24 @@
             vitae tellus. Etiam iaculis vehicula tempor.</p>
     </section>
 
-</body>
+    <script >
 
+const darkModeToggle = document.getElementById('darkModeToggle');
+const root = document.documentElement;
+
+darkModeToggle.addEventListener('change', () => {
+    root.classList.toggle('dark-mode');
+
+    // Salvar a preferência do usuário no localStorage
+    localStorage.setItem('darkMode', darkModeToggle.checked);
+});
+
+// Carregar a preferência do usuário ao carregar a página
+const savedDarkMode = localStorage.getItem('darkMode');
+if (savedDarkMode === 'true') {
+    root.classList.add('dark-mode');
+    darkModeToggle.checked = true;
+}
+    </script>
+</body>
 </html>
